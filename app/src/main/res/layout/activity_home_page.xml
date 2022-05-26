@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomePage">
+
+
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.061"
+                app:srcCompat="@drawable/womenart" />
+
+            <TextView
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="PANIC ALERT MODE!!!"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36dp"
+                android:textStyle="italic|bold" />
+
+
+            <TextView
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="IN PANIC ALERT MODE, MESSAGE WILL BE SENT TO YOUR EMERGENCY CONTACT FOR HELP..."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="CAUTIOUS MODE!!!"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="IN CAUTIOUS ALERT MODE, MESSAGE WILL BE SENT TO YOUR EMERGENCY CONTACT FOR STAYING ACTIVE..."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textStyle="italic|bold" />
+
+
+            <TextView
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="SEND STATUS MODE!!!"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="36dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="IN SEND STATUS MODE, YOUR LIVE LOCATION WILL BE SENT TO YOUR EMERGENCY CONTACT..."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+                android:id="@+id/viewTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="VIEW SAFETY TIPS!!!"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/addPersonalDetails"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:text="ADD PERSONAL DETAILS"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:layout_marginBottom="70dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="73dp"
+                tools:layout_editor_absoluteY="229dp" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_bottom"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
